@@ -1,0 +1,17 @@
+.idea/
+.next/
+.vscode/
+node_modules/
+build/
+.vscode
+.env
+.env-prod
+package-lock.json
+*.csv
+*.sql
+.DS_Store
+src/.DS_Store
+src/boilerPlate/test.html
+*.log
+src/uploads
+*-lock.json

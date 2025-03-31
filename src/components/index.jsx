@@ -19,7 +19,7 @@ import { WebApp } from './website';
 import { Avatar } from '@mui/material';
 
 const drawerWidth = 240;
-const navItems = { 'home': 'Home', 'aboutus': 'About us', 'services': 'Services', 'projects': 'Projects', 'contactus': 'Contact Us'};
+const navItems = { 'home': 'Home', 'services': 'Services', 'projects': 'Projects', 'contactus': 'Contact Us'};
 
 export const Website = (props) => {
   const { window } = props;

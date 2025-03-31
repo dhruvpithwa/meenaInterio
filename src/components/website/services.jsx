@@ -8,8 +8,7 @@ export const Services = () => {
             id="services"
             component={"section"} 
             sx={{
-                p: 3,
-                mt: 2
+                p: 3
             }}
         >
             
@@ -20,11 +19,11 @@ export const Services = () => {
                     "&::after": {
                     content: '""',
                     position: "absolute",
-                    width: "60%", // Adjust this for partial underline width
-                    height: "2.5px", // Thickness of the underline
-                    backgroundColor: "#fdb73e", // Color of the underline
+                    width: "60%",
+                    height: "2.5px",
+                    backgroundColor: "#fdb73e",
                     bottom: 0,
-                    left: "40%", // Center the underline
+                    left: "40%",
                     },
                 }}
                 >
@@ -98,13 +97,7 @@ export const Services = () => {
                         </CardContent>
                     </Card>
                 </Grid>
-                
             </Grid>
-            
-
-          
-            
-           
         </Box>
     )
 }

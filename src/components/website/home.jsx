@@ -32,10 +32,10 @@ export const Home = () => {
                 </Grid>
                 <Grid item xs={12} md={5} justifyContent={'center'} alignContent={'center'}>
                     <CardCarousel cardsToShow={1} interval={3000} >
-                        {Object.keys(projects).map((projectKey) => (
+                        {Object.keys(projects).filter(key => projects[key].assets.length > 0).map((key) => (
                             <Box
                                 component="img"
-                                src={projects[projectKey].assets[0].url}
+                                src={projects[key].assets[0].url}
                                 alt={"banner-image"}
                                 sx={{
                                     borderRadius: '10px',

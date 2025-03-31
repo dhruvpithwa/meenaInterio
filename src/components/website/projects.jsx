@@ -46,8 +46,8 @@ export const Projects = () => {
             <br></br>
 
             <CardCarousel cardsToShow={cardsToShow}>
-                {Object.keys(projects).map((projectKey) => (
-                    <ProjectCard project={projects[projectKey]} />
+                {Object.keys(projects).filter(key => projects[key].assets.length > 0).map((key) => (
+                    <ProjectCard project={projects[key]} />
                 ))}
             </CardCarousel>
         </Box>

@@ -99,7 +99,7 @@ export const Website = (props) => {
       </nav>
       <Box component="main" sx={{ width: '100%' }} >
         <Toolbar />
-        <WebApp />
+        {props.children}
         <Footer />
       </Box>
     

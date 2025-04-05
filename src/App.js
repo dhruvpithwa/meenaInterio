@@ -13,7 +13,7 @@ import { Provider } from "react-redux";
 import store from "./store";
 import { EditProject } from "./components/admin/projects/edit";
 import { ShowProject } from "./components/admin/projects/show";
-
+import { WebApp } from "./components/website";
 
 const themeOptions = {
   palette: {
@@ -69,7 +69,8 @@ function App() {
               </Route>
             </Route>
             <Route path={'login'} element={<Login />} />
-            <Route path={''} element={<Website />} />
+            <Route path={''} element={<Website><WebApp /></Website>} />
+            <Route path={'projects'} element={<Website><WebApp /></Website>} /> 
           </Routes>
         </BrowserRouter>
       </ThemeProvider>

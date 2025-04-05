@@ -1,10 +1,11 @@
 import { LocationOn } from '@mui/icons-material';
-import { Box, Card, CardContent, Typography } from '@mui/material';
+import { Box, Button, Card, CardContent, Typography } from '@mui/material';
+import { useNavigate } from 'react-router';
 
 export const ProjectCard = (props) => {
 
-    const project = props.project;
-    const { assets, name, location } = project ?? {};
+    const navigate = useNavigate();
+    const { assets, name, location, id } = props.project ?? {};
 
     return (
         <Card variant="elevation" sx={{ background: "transparent" }}>
@@ -44,6 +45,14 @@ export const ProjectCard = (props) => {
                 >
                     <LocationOn /> {location}
                 </Typography>
+                <Button 
+                    onClick={()=> {
+                        navigate(`/projects?id=${id}`);
+                        window.scrollTo(0, 0);
+                    }}
+                >
+                    Click 
+                </Button>
             </CardContent>
         </Card>
     )
